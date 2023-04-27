@@ -7,5 +7,5 @@ module top_module (
     assign out[14:10] = ~ {5{c}} ^ {a, b, c, d, e};
     assign out[9:5] = ~ {5{d}} ^ {a, b, c, d, e};
     assign out[4:0] = ~ {5{e}} ^ {a, b, c, d, e};
-
+//assign out = ~{ {5{a}},{5{b}},{5{c}},{5{d}},{5{e}}} ^ { 5{a,b,c,d,e} };
 endmodule
